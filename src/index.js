@@ -11,16 +11,18 @@ class AppContainer extends HTMLElement {
     }
 
     render(){
-        const section = document.createElement('section')
-        const title = document.createElement('h2')
-        const btn = document.createElement('app-button')
-
-        title.textContent = 'este es el titulo'
-
-        section.appendChild(title)
-        section.appendChild(btn)
-
-        this.shadowRoot.appendChild(section)
+        this.shadowRoot.innerHTML = `
+        <app-button></app-button>
+        <app-profile></app-profile>
+        <app-createpost></app-createpost>
+        <app-login></app-login>
+        <app-register></app-register>
+        <app-form></app-form>
+        <app-nav></app-nav>
+        <app-storie></app-storie>
+        <app-suggest></app-suggest>
+        <app-postss></app-postss>
+        `
     }
 }
 

@@ -1,4 +1,4 @@
-class Button extends HTMLElement{
+class Postss extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({mode: 'open'})
@@ -10,9 +10,9 @@ class Button extends HTMLElement{
 
     render(){
         this.shadowRoot.innerHTML = `
-        <h2>hola</h2>
+        <h2>es un post</h2>
         `
     }
 }
 
-customElements.define('app-button', Button)
+customElements.define('app-postss', Postss)

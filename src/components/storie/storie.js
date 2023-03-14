@@ -1,4 +1,4 @@
-class Button extends HTMLElement{
+class Storie extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({mode: 'open'})
@@ -10,9 +10,9 @@ class Button extends HTMLElement{
 
     render(){
         this.shadowRoot.innerHTML = `
-        <h2>hola</h2>
+        <h2>stories pa</h2>
         `
     }
 }
 
-customElements.define('app-button', Button)
+customElements.define('app-storie', Storie)
