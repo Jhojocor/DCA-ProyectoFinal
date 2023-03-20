@@ -22,6 +22,7 @@ class AppContainer extends HTMLElement {
         <app-storie></app-storie>
         <app-suggest></app-suggest>
         <app-postss></app-postss>
+        <app-home></app-home>
         `
     }
 }
