@@ -24,6 +24,7 @@ class AppContainer extends HTMLElement {
         <app-postss></app-postss>
         <app-home></app-home>
         `
+        //hechos los componentes
     }
 }
 
