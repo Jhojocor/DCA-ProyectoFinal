@@ -13,7 +13,8 @@ class AppContainer extends HTMLElement {
     render(){
         this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="./styles/nav.css">
-        
+        <link rel="stylesheet" href="./styles/storie.css">
+
         <section id="mainContenedor">
 
         <section id="NavBar">
@@ -29,6 +30,16 @@ class AppContainer extends HTMLElement {
             <div class="End">
                 <app-nav img="https://pbs.twimg.com/media/FrsEerWWwAIOOnV?format=png&name=120x120" text="Settings"></app-nav>
             </div>
+        </section>
+
+        <section class="arreglo">
+        <article class="container1">
+            <app-storie name="Cristiano" img="https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_300/primary/pcxgwhoweqzzhiuqbwqw"></app-storie>
+            <app-storie name="Neymar Jr" img="https://img.lalr.co/cms/2017/09/01141420/NeymarJR.jpg?size=sm&ratio=sq&f=jpg"></app-storie>
+            <app-storie name="Anuel" img="https://is2-ssl.mzstatic.com/image/thumb/Music112/v4/31/a3/4e/31a34e1a-6b2d-27d7-110d-0db9a9aa42c5/pr_source.png/375x375bb.jpg"></app-storie>
+            <app-storie name="Mora" img="https://pbs.twimg.com/profile_images/1509033228874694659/KjCCiVZI_400x400.jpg"></app-storie>
+        </article>
+
         </section>
 
         </section>
