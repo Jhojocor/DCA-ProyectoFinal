@@ -45,6 +45,17 @@ class AppContainer extends HTMLElement {
         <app-postss pictureprofile="https://yt3.ggpht.com/GUW78kIdMM2mVjl-c1rkSD8DqNYSRZAfTUTie3j4xKFN6agTpdb9UiMDGwQB2yuoDpKB1a8QNn8=s900-c-k-c0x00ffffff-no-rj" user="dilancano_" ubi="cali, valle" content="https://caracoltv.brightspotcdn.com/dims4/default/b7ef876/2147483647/strip/false/crop/1500x1000+0+0/resize/1200x800!/quality/90/?url=http%3A%2F%2Fcaracol-brightspot.s3.amazonaws.com%2F94%2F2b%2F206da0a64bd2b69fa432deaa9206%2Ffeid-bogota-mor-movistar-arena.jpg" likes="1550" description="En el concierto de ferxxo" coments="#ferxxo" date="Friday"></app-postss>
         </section>
 
+        <section class="suggestBoxContainer">
+        <app-profile name="Dilan" user="DilanCan0" img="https://www.elcolombiano.com/binrepository/660x645/0c0/780d565/none/11101/CPLQ/w660-689207-feidremixexclusivo_41960947_20230317123656.jpg"></app-profile>
+            <section class="suggestText">
+                <h2>Suggestions for you</h2>
+                <h3>View all</h3>
+            </section>
+            <app-suggest img="https://files.antena2.com/antena2/public/podcast/field/images/cali.png?VersionId=aj1whX6TUlTagS068GaKAm6BXZZsuaKR" name="Deportivo cali" follow="Jhojocor" number="42"></app-suggest>
+            <app-suggest img="https://upload.wikimedia.org/wikipedia/commons/a/ad/Arc%C3%A1ngel_%22La_Entrevista%22_-_A_solas_con_Tony_Dandrades.jpg" name="Arcangel" follow="Santygr21" number="12"></app-suggest>
+            <app-suggest img="https://thumbs.dreamstime.com/b/fondo-negro-vectorial-del-logotipo-de-nike-marca-para-uso-impreso-ropa-deportiva-y-fitness-183282388.jpg" name="Nike" follow="Ferxxo" number="100"></app-suggest>
+        </section>
+
         </section>
 
 
