@@ -15,6 +15,7 @@ class AppContainer extends HTMLElement {
         <link rel="stylesheet" href="./styles/nav.css">
         <link rel="stylesheet" href="./styles/storie.css">
         <link rel="stylesheet" href="./styles/postss.css">
+        <link rel="stylesheet" href="./styles/suggest.css">
 
         <section id="mainContenedor">
 
