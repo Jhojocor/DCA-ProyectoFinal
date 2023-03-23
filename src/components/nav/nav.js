@@ -14,16 +14,9 @@ class Nav extends HTMLElement {
     }
 
     connectedCallback() {
-        var _a;
         this.render();
-        const btn = (_a = this.shadowRoot) === null || _a === void 0 ? void 0 : _a.querySelector("button");
-        btn === null || btn === void 0 ? void 0 : btn.addEventListener("click", () => {
-            const event = new CustomEvent("create-post", {
-                composed: true
-            });
-            this.dispatchEvent(event);
-        });
     }
+    
     render() {
         if (this.shadowRoot) {
             this.shadowRoot.innerHTML = `
