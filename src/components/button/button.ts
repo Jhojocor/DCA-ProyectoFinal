@@ -1,4 +1,4 @@
-class Button extends HTMLElement{
+export default class Button extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({mode: 'open'})
@@ -9,9 +9,9 @@ class Button extends HTMLElement{
     }
 
     render(){
-        this.shadowRoot.innerHTML = `
+        if(this.shadowRoot){this.shadowRoot.innerHTML = `
         <h2>hola</h2>
-        `
+        `}
     }
 }
 

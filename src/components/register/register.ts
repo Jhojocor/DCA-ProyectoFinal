@@ -1,4 +1,4 @@
-class Register extends HTMLElement{
+export default class Register extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({mode: 'open'})
@@ -9,9 +9,9 @@ class Register extends HTMLElement{
     }
 
     render(){
-        this.shadowRoot.innerHTML = `
+        if(this.shadowRoot){this.shadowRoot.innerHTML = `
         <h2>registrado pa</h2>
-        `
+        `}
     }
 }
 

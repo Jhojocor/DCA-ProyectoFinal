@@ -1,4 +1,4 @@
-class Form extends HTMLElement{
+export default class Form extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({mode: 'open'})
@@ -9,9 +9,9 @@ class Form extends HTMLElement{
     }
 
     render(){
-        this.shadowRoot.innerHTML = `
+        if(this.shadowRoot){this.shadowRoot.innerHTML = `
         <h2>Form hexo</h2>
-        `
+        `}
     }
 }
 

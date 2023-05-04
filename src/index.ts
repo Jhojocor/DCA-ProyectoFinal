@@ -1,4 +1,4 @@
-import "./components/index.js"
+import "./components/index"
 
 class AppContainer extends HTMLElement {
     constructor(){
@@ -11,7 +11,7 @@ class AppContainer extends HTMLElement {
     }
 
     render(){
-        this.shadowRoot.innerHTML = `
+        if(this.shadowRoot){this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="./styles/nav.css">
         <link rel="stylesheet" href="./styles/storie.css">
         <link rel="stylesheet" href="./styles/postss.css">
@@ -60,7 +60,7 @@ class AppContainer extends HTMLElement {
         </section>
 
 
-        `
+        `}
         //hechos los componentes
     }
 }

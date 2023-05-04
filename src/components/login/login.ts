@@ -1,4 +1,4 @@
-class Login extends HTMLElement{
+export default class Login extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({mode: 'open'})
@@ -9,9 +9,9 @@ class Login extends HTMLElement{
     }
 
     render(){
-        this.shadowRoot.innerHTML = `
+        if(this.shadowRoot){this.shadowRoot.innerHTML = `
         <h2>holasss</h2>
-        `
+        `}
     }
 }
 

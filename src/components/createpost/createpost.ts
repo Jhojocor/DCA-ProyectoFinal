@@ -1,4 +1,4 @@
-class CreatePost extends HTMLElement{
+export default class CreatePost extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({mode: 'open'})
@@ -9,9 +9,9 @@ class CreatePost extends HTMLElement{
     }
 
     render(){
-        this.shadowRoot.innerHTML = `
+        if(this.shadowRoot){this.shadowRoot.innerHTML = `
         <h2>hola de prueba 2</h2>
-        `
+        `}
     }
 }
 

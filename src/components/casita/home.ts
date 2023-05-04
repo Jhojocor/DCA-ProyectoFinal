@@ -1,4 +1,4 @@
-class Home extends HTMLElement{
+export default class Home extends HTMLElement{
     constructor(){
         super();
         this.attachShadow({mode: 'open'})
@@ -9,9 +9,9 @@ class Home extends HTMLElement{
     }
 
     render(){
-        this.shadowRoot.innerHTML = `
+        if(this.shadowRoot){this.shadowRoot.innerHTML = `
         <h2>Esto es un home</h2>
-        `
+        `}
     }
 }
 

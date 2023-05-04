@@ -1,4 +1,4 @@
-class Storie extends HTMLElement{
+export default class Storie extends HTMLElement{
     static get observedAttributes(){
         return["img", "name"];
     }
@@ -8,23 +8,23 @@ class Storie extends HTMLElement{
         this.attachShadow({mode: 'open'})
     }
 
-    attributeChangedCallback(propName, oldValue, newValue){
+    /*attributeChangedCallback(propName, oldValue, newValue){
         this[propName] = newValue;
         this.render();
-    }
+    }*/
 
     connectedCallback(){
         this.render();
     }
 
     render(){
-        this.shadowRoot.innerHTML = `
+        if(this.shadowRoot){this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="./styles/storie.css">
             <section class="storie1">
-                <img class="imgPrueba" src="${this.img}" alt="PicStories">
-                <p>${this.name}</p>
+                <img class="imgPrueba" src="xd" alt="PicStories">
+                <p>xd</p>
             </section>
-        `
+        `}
     }
 }
 

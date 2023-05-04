@@ -1,4 +1,4 @@
-class Nav extends HTMLElement {
+export default class Nav extends HTMLElement {
     static get observedAttributes(){
         return["img", "text"];
     }
@@ -8,10 +8,10 @@ class Nav extends HTMLElement {
         this.attachShadow({ mode: "open" });
     }
 
-    attributeChangedCallback(propName, oldValue, newValue){
+    /*attributeChangedCallback(propName, oldValue, newValue){
         this[propName] = newValue;
         this.render();
-    }
+    }*/
 
     connectedCallback() {
         this.render();
@@ -26,12 +26,11 @@ class Nav extends HTMLElement {
             <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
 
             <div class="IconText">
-                <img src="${this.img}">
-                <h3>${this.text}</h3>
+                <img src="por ahora nada">
+                <h3>prueba</h3>
             </div>
                 `;
         }
     }
 }
 customElements.define("app-nav", Nav);
-export default Nav;
