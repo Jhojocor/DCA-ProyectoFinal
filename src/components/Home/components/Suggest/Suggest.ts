@@ -32,4 +32,4 @@ export default class Suggest extends HTMLElement{
     }
 }
 
-customElements.define('app-suggest', Suggest)
+customElements.define('app-suggest',Suggest);
