@@ -5,6 +5,11 @@ export default class Login extends HTMLElement{
         this.attachShadow({mode: "open"});
     }
 
+    connectedCallback(){
+        this.render();
+        const form = this.shadowRoot?.querySelector("app-form");
+    }
+
     render(){
         if(!this.shadowRoot) return;
         this.shadowRoot.innerHTML = `

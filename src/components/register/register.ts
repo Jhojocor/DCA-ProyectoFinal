@@ -1,8 +1,14 @@
-export default class Register extends HTMLElement{
+  export default class Register extends HTMLElement{
+
 
     constructor(){
         super();
         this.attachShadow({mode: "open"});
+    }
+
+    connectedCallback(){
+        this.render();
+        const form = this.shadowRoot?.querySelector("app-form");
     }
 
     render(){
