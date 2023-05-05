@@ -1,31 +1,52 @@
-export default class Storie extends HTMLElement{
+export enum AttributeStories {
+    "pic" = "pic",
+    "username" = "username"
+}
+
+class MyStory extends HTMLElement{
+    pic?: any;
+    username?: string;
+
     static get observedAttributes(){
-        return["img", "name"];
+        const attrs: Record<AttributeStories,null> = {
+            pic: null,
+            username: null
+        };
+        return Object.keys(attrs);
     }
 
     constructor(){
         super();
-        this.attachShadow({mode: 'open'})
+        this.attachShadow({mode: "open"});
     }
-
-    /*attributeChangedCallback(propName, oldValue, newValue){
-        this[propName] = newValue;
-        this.render();
-    }*/
 
     connectedCallback(){
         this.render();
     }
 
-    render(){
-        if(this.shadowRoot){this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="./styles/storie.css">
-            <section class="storie1">
-                <img class="imgPrueba" src="xd" alt="PicStories">
-                <p>xd</p>
-            </section>
-        `}
+    attributeChangedCallback(
+        propName: AttributeStories, 
+        oldValue: string | undefined, 
+        newValue: string | undefined){
+        this[propName] = newValue;
+        this.render();
     }
+
+    render(){
+        if(this.shadowRoot){
+            this.shadowRoot.innerHTML = `
+            <link rel="stylesheet" href="./styles/storie.css">
+            <section class="Container">
+                <section>
+                    <img src="${this.pic}" alt="PicStories">
+                    <p>${this.username}</p>
+                </section>
+            </section>
+            `
+        }
+    }
+
 }
 
-customElements.define('app-storie', Storie)
+customElements.define("my-stories", MyStory);
+export default MyStory;
