@@ -1,3 +1,5 @@
+import { queryUser } from "../../services/db.js";
+
 export default class Login extends HTMLElement{
 
     constructor(){
@@ -5,10 +7,23 @@ export default class Login extends HTMLElement{
         this.attachShadow({mode: "open"});
     }
 
-    connectedCallback(){
+    /*connectedCallback(){
         this.render();
         const form = this.shadowRoot?.querySelector("app-form");
-    }
+        form.addEventListener("form-fullfiled", (evt: CustomEvent)=>{
+            const email = evt.detail.email;
+            const password = evt.detail.password;
+
+            queryUser({email,password}).then(value => {
+                if(value){
+                    const event: CustomEvent = new CustomEvent("login-success",{
+                        composed: true
+                    })
+                    this.dispatchEvent(event);
+                }
+            })
+        })
+    }*/
 
     render(){
         if(!this.shadowRoot) return;
