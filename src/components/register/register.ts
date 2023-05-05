@@ -1,29 +1,28 @@
-/*import { addUser } from "../../services/db";*/
-  
-export default class Register extends HTMLElement{
+//import { addUser } from "../../services/db.js";/
 
+export default class Register extends HTMLElement{
 
     constructor(){
         super();
         this.attachShadow({mode: "open"});
     }
 
-    // connectedCallback(){
-    //     this.render();
-    //     const form = this.shadowRoot?.querySelector("app-form");
-    //     form.addEventListener("form-fullfiled", (evt: CustomEvent<FormFullfiledEvent>)=>{
-    //         const email = evt.detail.email;
-    //         const password = evt.detail.password;
+    connectedCallback(){
+        this.render();
+        const form = this.shadowRoot?.querySelector("app-form");
+        /*form.addEventListener("form-fullfiled", (evt: CustomEvent)=>{
+            const email = evt.detail.email;
+            const password = evt.detail.password;
 
-    //         addUser({email,password}).then(value => {
-    //             if(value){
-    //                 const event: CustomEvent = new CustomEvent("register-success",{})
-    //                 console.log(this);
-    //                 this.dispatchEvent(event);
-    //             }
-    //         })
-    //     })
-    // }
+            addUser({email,password}).then(value => {
+                if(value){
+                    const event: CustomEvent = new CustomEvent("register-success",{})
+                    console.log(this);
+                    this.dispatchEvent(event);
+                }
+            })
+        })*/
+    }
 
     render(){
         if(!this.shadowRoot) return;
