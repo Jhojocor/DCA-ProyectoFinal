@@ -1,4 +1,5 @@
-import "./Post/Post.js";
-import "./Stories/Stories.js";
-import "./Suggest/Suggest.js";
-import "./Nave/Nag.js";
+import "./Post/Post";
+import "./Stories/Stories";
+import "./Suggest/Suggest";
+import "./Nave/Nag";
+import "./button/button"

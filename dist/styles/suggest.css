@@ -28,11 +28,12 @@
 }
 .suggestText h2{
     font-size: 18px;
-    color: rgba(90, 90, 90, 0.725);
+    color: #000000;
 }
 .suggestText h3{
     font-size: 16px;
     font-weight: 400;
+    color: #774494;
 }
 .suggestBox{
     margin-top: 5px;
@@ -47,13 +48,12 @@
     height: 50px;
     width: 50px;
 }
-.suggestBox div{
+.suggestBox section{
     width: 400px;
     display: flex;
     flex-direction: row;
 }
 .suggestBox h1{
-    font-size: 18px;
     margin: 8px 0 0 15px;
 }
 .suggestBox span{
@@ -62,10 +62,9 @@
 }
 .suggestBox h2{
     font-size: 18px;
-    color:  #774494;
+    color: #774494;
 }
-
-.img{
+img{
     height: 60px;
     width: 60px;
     border-radius: 50%;
