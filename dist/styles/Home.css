@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body-feed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #efefef;
+}
+
+app-container my-stories{
+    background-color: #ffff;
+}
+
+.stories-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}

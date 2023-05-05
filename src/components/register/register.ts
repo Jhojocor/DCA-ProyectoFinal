@@ -1,4 +1,4 @@
-import { addUser } from "../../services/db";
+/*import { addUser } from "../../services/db";*/
   
 export default class Register extends HTMLElement{
 

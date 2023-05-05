@@ -1,10 +1,5 @@
-export {default as Button} from './Home/components/button/button'
-export {default as Profile} from './profile/profile'
-export {default as CreatePost} from './createpost/createpost'
-export {default as Login} from './login/login'
-export {default as Register} from './register/register'
-export {default as Form} from './form/form'
-export {default as Nav} from './Home/components/Nave/Nag'
-export {default as Storie} from './Home/components/Stories/Stories'
-/*export {default as Suggest} from './Home/components/Suggest/Suggest'*/
-export {default as Post} from './Home/components/Post/postss'
+export { default as Form } from "./form/form"
+export { default as Home } from "./Home/Home"
+export { default as Login } from "./login/login"
+export { default as Register } from "./register/register"
+export { default as CreatePost } from "./createpost/createpost";
