@@ -1,4 +1,4 @@
-//import { addPost } from "../../services/db.js";/
+import { addPost } from "../../services/db";
 
 export default class  CreatePost extends HTMLElement{
     username = "";
@@ -23,7 +23,7 @@ export default class  CreatePost extends HTMLElement{
                     comment: this.comment
                 }
                 try {
-                    /await addPost(postData);/
+                    await addPost(postData);
                     alert("Post created");
 
                     const event: CustomEvent = new CustomEvent("form-fullfilled",{composed: true});

@@ -1,4 +1,4 @@
-//import { addUser } from "../../services/db.js";/
+import { addUser } from "../../services/db";
 
 export default class Register extends HTMLElement{
 
@@ -10,7 +10,7 @@ export default class Register extends HTMLElement{
     connectedCallback(){
         this.render();
         const form = this.shadowRoot?.querySelector("app-form");
-        /*form.addEventListener("form-fullfiled", (evt: CustomEvent)=>{
+        form?.addEventListener("form-fullfiled", (evt: any)=>{
             const email = evt.detail.email;
             const password = evt.detail.password;
 
@@ -21,7 +21,7 @@ export default class Register extends HTMLElement{
                     this.dispatchEvent(event);
                 }
             })
-        })*/
+        })
     }
 
     render(){

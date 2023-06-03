@@ -1,4 +1,4 @@
-//import { queryUser } from "../../services/db.js";/
+import { queryUser } from "../../services/db";
 
 export default class Login extends HTMLElement{
 
@@ -10,7 +10,7 @@ export default class Login extends HTMLElement{
     connectedCallback(){
         this.render();
         const form = this.shadowRoot?.querySelector("app-form");
-        /*form.addEventListener("form-fullfiled", (evt: CustomEvent)=>{
+        form?.addEventListener("form-fullfiled", (evt: any)=>{
             const email = evt.detail.email;
             const password = evt.detail.password;
 
@@ -22,7 +22,7 @@ export default class Login extends HTMLElement{
                     this.dispatchEvent(event);
                 }
             })
-        })*/
+        })
     }
 
     render(){

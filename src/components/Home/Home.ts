@@ -4,6 +4,7 @@ import dataPost from "./dataPost";
 
 import MyStory, {AttributeStories} from "./components/Stories/Stories";
 import MyPost, {AttributePost} from "./components/Post/postss";
+import { getPosts } from "../../services/db";
 
 export default class Home extends HTMLElement{
     stories: MyStory[] = [];
@@ -23,8 +24,9 @@ export default class Home extends HTMLElement{
 
       async connectedCallback(){
         try {
-            const posts = dataPost;
-            posts
+            const posts = await getPosts();
+            posts?.filter(post => post.time)
+                .sort((postA, postB) => postB.time - postA.time)
                 .forEach((data) => {
                     const postCard = this.ownerDocument.createElement("my-post") as MyPost;
                     postCard.setAttribute(AttributePost.pictureprofile, data.pictureprofile);

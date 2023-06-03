@@ -15,6 +15,7 @@ class MyPost extends HTMLElement {
     ubi?: string;
     content?: any;
     likes?: string;
+    propLikes = 0;
     description?: string;
     coments?: string;
     date?: string;
@@ -65,7 +66,9 @@ class MyPost extends HTMLElement {
         <div class="imgPost"><img src="${this.content}"></div>
         <div class="icons">
         <div class="IgIcons">
-            <img src="https://pbs.twimg.com/media/FrsEchKWwAEIRjr?format=png&name=120x120">
+            <button type="submit" style="border: 0; margin: 0; padding: 0; display: flex">
+                <img src="https://pbs.twimg.com/media/FrsEchKWwAEIRjr?format=png&name=120x120">
+            </button>
             <img src="https://pbs.twimg.com/media/FrsEchHWcAMxoOi?format=png&name=120x120">
             <img src="https://pbs.twimg.com/media/FrsEhGkX0AI7Gge?format=png&name=120x120">
         </div>
@@ -79,7 +82,7 @@ class MyPost extends HTMLElement {
         <div class="saveIcon">
             <img src="https://pbs.twimg.com/media/FrsEhGIWAAk_bF4?format=png&name=120x120">
         </div></div>
-        <h4 class="counter">${this.likes}</h4>
+        <h4 class="counter">${this.propLikes} Likes</h4>
         <div class="description">
             <h4 class="desUser">${this.user}</h4>
             <h4 class="desMess">${this.description}</h4>
@@ -88,6 +91,13 @@ class MyPost extends HTMLElement {
         <h6>${this.date}</h6>
         </div>`
         }
+
+        
+        const btn = this.shadowRoot?.querySelector("button");
+        btn?.addEventListener("click",()=>{
+            this.propLikes += 1;
+            this.render();
+        });
     }
 }
 
