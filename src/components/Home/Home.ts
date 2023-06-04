@@ -29,7 +29,7 @@ export default class Home extends HTMLElement{
                 .sort((postA, postB) => postB.time - postA.time)
                 .forEach((data) => {
                     const postCard = this.ownerDocument.createElement("my-post") as MyPost;
-                    postCard.setAttribute(AttributePost.pictureprofile, data.pictureprofile);
+                    postCard.setAttribute(AttributePost.pictureprofile, data.content);
                     postCard.setAttribute(AttributePost.user, data.user);
                     postCard.setAttribute(AttributePost.ubi, data.ubi);
                     postCard.setAttribute(AttributePost.content, data.content);
