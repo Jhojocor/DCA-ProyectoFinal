@@ -95,8 +95,12 @@ class MyPost extends HTMLElement {
         
         const btn = this.shadowRoot?.querySelector("button");
         btn?.addEventListener("click",()=>{
-            this.propLikes += 1;
-            this.render();
+            if(this.propLikes === 0){
+                this.propLikes += 1;
+                this.render();
+            }else{
+                window.alert("¡Ya le diste like a esta publicación!");
+            }
         });
     }
 }

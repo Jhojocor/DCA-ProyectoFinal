@@ -7,7 +7,7 @@ enum Screens {
 }
 
 class AppContainer extends HTMLElement{
-    screen: Screens = Screens.createPost;
+    screen: Screens = Screens.home;
 
     constructor(){
         super();
