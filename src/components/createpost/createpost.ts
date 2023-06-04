@@ -72,7 +72,7 @@ export default class  CreatePost extends HTMLElement{
                         <button type="submit">Create post</button>
                     </div>
                 </div>
-                <img class="promotion" src="https://pbs.twimg.com/media/Fxw42kmWcAAUF1l?format=jpg&name=4096x4096">
+                <img class="promotion" src="https://pbs.twimg.com/media/FxzT65MWIAEVlPD?format=jpg&name=4096x4096">
 
                 </img>
 

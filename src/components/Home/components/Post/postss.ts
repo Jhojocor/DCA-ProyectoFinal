@@ -68,6 +68,7 @@ class MyPost extends HTMLElement {
         <div class="IgIcons">
             <button type="submit" style="border: 0; margin: 0; padding: 0; display: flex">
                 <img src="https://pbs.twimg.com/media/FrsEchKWwAEIRjr?format=png&name=120x120">
+                <img class="hide" src="https://pbs.twimg.com/media/FrsEeraXgAMNizS?format=png&name=120x120">
             </button>
             <img src="https://pbs.twimg.com/media/FrsEchHWcAMxoOi?format=png&name=120x120">
             <img src="https://pbs.twimg.com/media/FrsEhGkX0AI7Gge?format=png&name=120x120">
