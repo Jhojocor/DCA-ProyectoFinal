@@ -60,25 +60,24 @@ export default class  CreatePost extends HTMLElement{
     render(){
         if(!this.shadowRoot) return;
         this.shadowRoot.innerHTML = `
-       <div class="form-container">
-        <article>
         <link rel="stylesheet" href="./styles/createpost.css">
-            <div class="input">
-                <input class="input__field" type="text" placeholder="Username" id="username"/>
-            </div>
-           
-            <div class="input">
-                <input class="input__field" type="text" placeholder="Image" id="image"/>
-            </div>
+       <section class="form-container">
+            <div class="master-container">
 
-            <div class="input">
-                <input class="input__field" type="text" placeholder="Comment" id="comment"/>
+                <div class="article">
+                    <div class="input">
+                        <input class="input__field" type="text" placeholder="Username" id="username"/>
+                        <input class="input__field" type="text" placeholder="Image" id="image"/>
+                        <input class="input__field" type="text" placeholder="Comment" id="comment"/>
+                        <button type="submit">Create post</button>
+                    </div>
+                </div>
+                <img class="promotion" src="https://pbs.twimg.com/media/Fxw42kmWcAAUF1l?format=jpg&name=4096x4096">
+
+                </img>
+
             </div>
-            
-            <button type="submit">Create post</button>
-            
-        </article>
-        </div>
+        </section>
         `
     }
 }
