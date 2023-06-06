@@ -3,7 +3,8 @@ enum Screens {
     login,
     register,
     home,
-    createPost
+    createPost,
+    profile
 }
 
 class AppContainer extends HTMLElement{
@@ -48,6 +49,13 @@ class AppContainer extends HTMLElement{
             this.render();
             this.setEventListeners();
         });
+        const myNav2 = this.shadowRoot?.querySelector("my-nav");
+        myNav2?.addEventListener('view-profile', () => {
+            this.screen = Screens.profile;
+            this.render();
+            this.setEventListeners();
+        });
+    
     }
 
     render(){
@@ -75,6 +83,11 @@ class AppContainer extends HTMLElement{
             case Screens.createPost: 
                 this.shadowRoot.innerHTML = "<app-create-post></app-create-post>"
             break;
+
+            case Screens.profile: 
+                this.shadowRoot.innerHTML = "<app-profile></app-profile>"
+            break;
+
 
 
             default:

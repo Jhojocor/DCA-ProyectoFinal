@@ -1,8 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, query, where, getDocs, addDoc } from "firebase/firestore/lite";
 
-//Al profesor le salen los mismos errores
-
 const firebaseConfig = {
     apiKey: "AIzaSyBRVaz22ElV9u2RM2DMqc7G7FRxPcfN9Zg",
     authDomain: "talki-about-db-954fa.firebaseapp.com",

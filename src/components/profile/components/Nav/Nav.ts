@@ -16,15 +16,6 @@ class MyNag extends HTMLElement{
             this.dispatchEvent(event);
         });
 
-        const btn2 = this.shadowRoot?.getElementById("btn2");
-        btn2?.addEventListener("click",()=>{
-            const event: CustomEvent = new CustomEvent("view-profile",{
-                composed: true
-            });
-
-            this.dispatchEvent(event);
-        });
-
     }
 
     render(){
@@ -61,10 +52,8 @@ class MyNag extends HTMLElement{
                         </button>
                     </div>
                     <div class="IconText">
-                        <button id="btn2" type="submit" style="border: 0; margin: 0; padding: 0; display: flex">
                         <img class="ProfilePic" src="https://pbs.twimg.com/media/FrsEer6XsAE7aO0?format=png&name=120x120">
                         <h3>Profile</h3>
-                        </button>
                     </div>
                 </section>
 
