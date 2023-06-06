@@ -30,7 +30,7 @@ export default class Register extends HTMLElement{
         <section class="Register">
         <link rel="stylesheet" href="./styles/Register.css">
             <img class="Logo" src="https://pbs.twimg.com/media/FrsDBPnXgAEPTV7?format=png&name=240x240">
-            <h3>Registrate para ver fotos y videos de tus amigos</h3>
+            <h3>Register to view photos and videos of your friends</h3>
             <button>Log in with Facebook</button>
             <h3>OR</h3>
             <app-form></app-form>

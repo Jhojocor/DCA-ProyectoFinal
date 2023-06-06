@@ -85,3 +85,58 @@ button:hover {
     background-color: #774494;
     scale: 1.02;
 }
+
+
+@media screen and (max-width : 1200px) {
+    article {
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #774494;
+        border-radius: 5px;
+        padding: 1rem;
+        max-width: 500px;
+        margin: auto;
+    }
+    input{
+        margin: 1vh;
+        width: 25vw;
+        padding: 1vh;
+        border: 1px solid #774494;
+    }
+}
+@media screen and (max-width : 720px) {
+    article {
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #774494;
+        border-radius: 5px;
+        padding: 1rem;
+        max-width: 500px;
+        margin: auto;
+    }
+    input{
+        margin: 1vh;
+        width: 25vw;
+        padding: 1vh;
+        border: 1px solid #774494;
+    }
+    @media screen and (max-width :400px) {
+        article {
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #774494;
+            border-radius: 5px;
+            padding: 1rem;
+            max-width: 500px;
+            margin: auto;
+        }
+        input{
+            margin: 1vh;
+            width: 25vw;
+            padding: 1vh;
+            border: 1px solid #774494;
+        }
+}
+}
+
+
